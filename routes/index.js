@@ -41,7 +41,7 @@ router.get('/contact', function(req, res, next) {
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/services', function(req, res, next) {
   res.render('services', { 
     title: 'Services',
      });
