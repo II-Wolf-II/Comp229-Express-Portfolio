@@ -1,0 +1,22 @@
+<% include partials/header.ejs %>
+  
+  <div class="container">
+    <div class="jumbotron">
+        <h1><%= title %></h1>
+        <div style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: left;">
+            
+            
+            Your Name is : <span id="data"> Name</span><br> 
+            Your Email is : <span id="data1"> Email</span><br> 
+            Your Mesage is :<span id="data2"> Message</span><br>
+            
+            
+            </div>
+            <script>
+              document.getElementById("data").innerHTML=localStorage.getItem("txtValue1");
+              document.getElementById("data1").innerHTML=localStorage.getItem("txtValue2");
+              document.getElementById("data2").innerHTML=localStorage.getItem("txtValue3");
+            </script>
+</div>
+</div>
+<% include partials/footer.ejs %>

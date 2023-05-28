@@ -1,0 +1,39 @@
+<% include partials/header.ejs %>
+
+<script type="text/javascript" src="/javascripts/form.js"></script>
+
+<h1><%= title %></h1>
+<p>Name: Aaron Ainsworth</p>
+<p>Number: 7058283111</p>
+<p>Times to contact: Monday-Friday: 10AM - 10PM</P>
+<p>                  Weekends:      1 PM - 9 PM</P>
+
+<div class="container">
+    <div class="jumbotron">
+<form action="form" >
+    <label> Name:<br />
+    <input type="text" size="19" name="Contact-Name" id="name"><br><br>
+    Email:<br>
+    <input type="email" name="Contact-Email" id="email"><br><br> 
+    Message:<br> 
+    <textarea name="Contact-Message" rows="6″ cols="20″ id="msg">
+    </textarea><br><br> 
+    <input type="submit" onclick="formdata()" value="Submit">
+</form>  
+<script>
+    function formdata()
+{
+    //gettting the values
+    var name= document.getElementById("name").value; 
+    var email = document.getElementById("email").value;
+    var message= document.getElementById("msg").value; 
+    //saving the values in local storage
+    localStorage.setItem("txtValue1", name);
+    localStorage.setItem("txtValue2", email);
+    localStorage.setItem("txtValue3", message);
+     
+}
+</script>
+</div>
+</div>
+<footer><% include partials/footer.ejs %></footer>
