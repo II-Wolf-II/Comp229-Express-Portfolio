@@ -1,2 +1,6 @@
 # Comp229 Express Portfolio
- Assignment 1 Express Portfolio Aaron Ainsworth Comp229
+ Student Number: 301160852
+ Student Name: Aaron Ainsworth
+ Class: COMP229
+ Assignment: Number 1 
+ Teachers Name: Julio
